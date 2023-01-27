@@ -1,0 +1,15 @@
+.header {
+    height: 90vh;
+    background: url(../assets/images/324351639_587456502717111_4772345257944139162_n.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $clr-txt-dark;
+    text-align: center;
+    padding-top: 5em;
+
+    .title {
+        font-family: $font-brand;
+        font-size: 2rem;
+    }
+}

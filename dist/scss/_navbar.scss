@@ -1,0 +1,79 @@
+.nav {
+    min-height: 10vh;
+    box-shadow: $bottom-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+    width: 100%;
+    position: sticky;
+    background-color: $clr-primary;
+    color: $clr-txt-dark;
+    top: 0;
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        .title__h1 {
+            font-family: $font-brand;
+            transition: $transition-fast;
+            color: $clr-txt-dark;
+    
+            &:hover {
+                color: $clr-brand;
+            }
+        }
+    
+        .nav__vector {
+            width: 50px;
+    
+        }
+    }
+
+
+
+    .navlinks {
+        list-style-type: none;
+        display: flex;
+        gap: 1.2em;
+
+        &__navlink {
+            font-size: .6rem;
+            transition: $transition-fast;
+        
+                &:hover {
+                    color: $clr-secondary;
+                }
+        }
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        outline: 2px solid #000;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: $border-radius-small;
+        cursor: pointer;
+        position: relative;
+        right: 5px;
+        transition: $transition-fast;
+        display: none;
+        z-index: 2;
+
+        &:hover {
+            background-color: $clr-brand;
+        }
+
+        &__bar {
+            width: 80%;
+            height: 3px;
+            background-color: $clr-txt-dark;
+            border-radius: $border-radius-small;
+            transition: $transition-fast;
+        }
+    }
+}

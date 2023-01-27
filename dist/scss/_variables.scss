@@ -1,0 +1,25 @@
+// ===== SCSS Variables and mixins ===== //
+
+// Colors
+$clr-brand: #60725d;
+$clr-primary: #E0F2C4;
+$clr-secondary: #60725d;
+$clr-txt-dark: #282c28;
+$clr-txt-light: #F2F2F2;
+$clr-support: #262626;
+
+// Typography
+$font-brand: 'Pacifico', cursive;
+$font-primary: 'Quattrocento Sans', sans-serif;;
+$font-secondary: 'Noto Serif', serif;
+
+// Borders
+$border-radius-small: 2px;
+$border-radius-big: 1em;
+
+// Transitions
+$transition-fast: 150ms ease-in;
+$transition-slow: 500ms ease-in-out;
+
+// Shadows
+$bottom-shadow: 1px 2px 7px #000;
