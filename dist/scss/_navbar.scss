@@ -37,6 +37,7 @@
         list-style-type: none;
         display: flex;
         gap: 1.2em;
+        font-family: $font-primary;
 
         &__navlink {
             font-size: .6rem;

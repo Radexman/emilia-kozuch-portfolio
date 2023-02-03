@@ -3,10 +3,11 @@
 @import './navbar';
 @import './mobile-navbar';
 @import './header';
+@import './article';
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 *,
 *::before,
@@ -48,4 +49,14 @@ body {
 
 .main {
     color: $clr-txt-dark;
+}
+
+h2 {
+    font-family: $font-brand;
+}
+
+p {
+    font-family: $font-secondary;
+    font-size: .7rem;
+    line-height: 1.5;
 }
