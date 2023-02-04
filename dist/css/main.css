@@ -20,6 +20,7 @@
   background-color: #f0ffec;
   color: #1b1b1b;
   top: 0;
+  z-index: 2;
 }
 .nav__title {
   display: -webkit-box;
@@ -228,6 +229,7 @@
   width: 50px;
   background-color: #1b1b1b;
   position: absolute;
+  z-index: -1;
 }
 .article__image {
   margin-inline: auto;
