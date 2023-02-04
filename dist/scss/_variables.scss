@@ -24,3 +24,25 @@ $transition-slow: 500ms ease-in-out;
 
 // Shadows
 $bottom-shadow: 1px 2px 7px #000;
+
+// Mixins
+@mixin vertical-line {
+    content: '';
+    width: 6px;
+    left: clamp(-13px, -4vw, -80px);
+    height: 200px;
+    background-color: $clr-transparent;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin horizontal-line {
+    content: '';
+    height: 4px;
+    bottom: -130px;
+    left: 0;
+    width: 50px;
+    background-color: $clr-txt-dark;
+    position: absolute;
+    z-index: -1;
+}

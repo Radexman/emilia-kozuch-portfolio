@@ -208,6 +208,9 @@
 .article .section__h2::first-letter {
   font-size: 3rem;
 }
+.article .section .reverse {
+  background-color: red;
+}
 .article .section__text {
   display: block;
   position: relative;
@@ -250,12 +253,24 @@
     grid-row: 1;
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   .section__h2 {
     text-align: center;
+  }
+}
+.article__image:nth-child(1) {
+  -webkit-box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 15vw, 60px) 0 rgba(84, 88, 83, 0.368627451);
+          box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 15vw, 60px) 0 rgba(84, 88, 83, 0.368627451);
+}
+
+@media screen and (max-width: 768px) {
+  .article__image:nth-child(1) {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: 8em;
   }
 }
 *,

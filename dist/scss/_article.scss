@@ -18,6 +18,10 @@
                 font-size: 3rem;
             }
         }
+
+        .reverse {
+            background-color: red;
+        }
     }
 
     .section__text {
@@ -25,26 +29,14 @@
         position: relative;
 
         &::before {
-            content: '';
-            width: 6px;
-            left: clamp(-13px, -4vw, -80px);
-            height: 200px;
-            background-color: $clr-transparent;
-            position: absolute;
-            z-index: -1;
+            @include vertical-line;
         }
 
         &::after {
-            content: '';
-            height: 4px;
-            bottom: -130px;
-            left: 0;
-            width: 50px;
-            background-color: $clr-txt-dark;
-            position: absolute;
-            z-index: -1;
+            @include horizontal-line;
         }
     }
+
 
     &__image {
         margin-inline: auto;
@@ -65,7 +57,7 @@
             grid-row: 1;
             width: 200px;
             height: 200px;
-            border-radius: 100px;
+            border-radius: 50%;
             box-shadow: none;
         }
     }

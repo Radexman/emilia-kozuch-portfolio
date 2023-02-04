@@ -1,0 +1,12 @@
+.article {
+    &__image:nth-child(1) {
+        box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 15vw, 60px) 0 $clr-transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .article__image:nth-child(1) {
+        box-shadow: none;
+        margin-top: 8em;
+    }
+}
