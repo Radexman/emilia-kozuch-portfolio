@@ -26,9 +26,9 @@
 
         &::before {
             content: '';
-            width: 8px;
+            width: 6px;
             left: clamp(-13px, -4vw, -80px);
-            height: 150px;
+            height: 200px;
             background-color: $clr-transparent;
             position: absolute;
             z-index: -1;
@@ -36,13 +36,12 @@
 
         &::after {
             content: '';
-            width: 8px;
-            right: -13px;
-            bottom: 30px;
-            height: 150px;
-            background-color: $clr-transparent;
+            height: 4px;
+            bottom: -130px;
+            left: 0;
+            width: 50px;
+            background-color: $clr-txt-dark;
             position: absolute;
-            z-index: -1;
         }
     }
 

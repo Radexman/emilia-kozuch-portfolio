@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 .nav {
-  min-height: 10vh;
+  max-height: 10vh;
   -webkit-box-shadow: 1px 2px 7px #000;
           box-shadow: 1px 2px 7px #000;
   display: -webkit-box;
@@ -14,7 +14,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-inline: 1em;
+  padding: 1em;
   width: 100%;
   position: sticky;
   background-color: #f0ffec;
@@ -150,7 +150,8 @@
 }
 .header {
   height: 90vh;
-  background-image: url(../assets/images/background-image.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(158, 248, 158, 0.4)), to(rgba(255, 255, 255, 0.342))), url(/dist/assets/images/background-image.jpg);
+  background: linear-gradient(to bottom, rgba(158, 248, 158, 0.4), rgba(255, 255, 255, 0.342)), url(/dist/assets/images/background-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
@@ -212,22 +213,21 @@
 }
 .article .section__text::before {
   content: "";
-  width: 8px;
+  width: 6px;
   left: clamp(-13px, -4vw, -80px);
-  height: 150px;
+  height: 200px;
   background-color: rgba(84, 88, 83, 0.368627451);
   position: absolute;
   z-index: -1;
 }
 .article .section__text::after {
   content: "";
-  width: 8px;
-  right: -13px;
-  bottom: 30px;
-  height: 150px;
-  background-color: rgba(84, 88, 83, 0.368627451);
+  height: 4px;
+  bottom: -130px;
+  left: 0;
+  width: 50px;
+  background-color: #1b1b1b;
   position: absolute;
-  z-index: -1;
 }
 .article__image {
   margin-inline: auto;
