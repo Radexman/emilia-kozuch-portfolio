@@ -1,7 +1,8 @@
+// ===== Main Hero section of the page ===== //
+
 .header {
     height: 90vh;
-    background: linear-gradient(to bottom, rgba(158, 248, 158, .4),rgba(255, 255, 255, 0.342)),
-         url(/dist/assets/images/background-image.jpg);
+    background: linear-gradient(to bottom, rgba(158, 248, 158, .4),rgba(255, 255, 255, 0.342)), url(/dist/assets/images/background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -32,6 +33,4 @@
             font-size: 1.5rem;
         }
     }
-
-
 }

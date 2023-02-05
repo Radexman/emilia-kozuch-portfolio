@@ -1,3 +1,5 @@
+// ===== Sticky navbar section ===== //
+
 .nav {
     max-height: 10vh;
     box-shadow: $bottom-shadow;
@@ -12,27 +14,16 @@
     top: 0;
     z-index: 2;
 
-    &__title {
-        display: flex;
-        align-items: center;
-
-        .title__h1 {
-            font-family: $font-brand;
-            transition: $transition-fast;
-            color: $clr-txt-dark;
+    .title__h1 {
+        font-family: $font-brand;
+        transition: $transition-fast;
+        color: $clr-txt-dark;
+        font-weight: 700;
     
-            &:hover {
-                color: $clr-brand;
-            }
-        }
-    
-        .nav__vector {
-            width: 50px;
-    
+        &:hover {
+            color: $clr-brand;
         }
     }
-
-
 
     .navlinks {
         list-style-type: none;
@@ -41,18 +32,19 @@
         font-family: $font-primary;
 
         &__navlink {
-            font-size: .6rem;
+            font-size: .7rem;
             transition: $transition-fast;
         
                 &:hover {
                     color: $clr-secondary;
+                    font-weight: 700;
                 }
         }
     }
 
     .hamburger {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
         outline: 2px solid #000;
         display: flex;
         flex-flow: column nowrap;
