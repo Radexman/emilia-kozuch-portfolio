@@ -39,6 +39,7 @@
                 background-color: $clr-secondary;
                 cursor: pointer;
                 color: $clr-txt-light;
+                border-radius: 5px;
 
                 &::before {
                     content: '+';

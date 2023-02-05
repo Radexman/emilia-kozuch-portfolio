@@ -1,0 +1,41 @@
+.article-kontakt {
+    min-height: 100vh;
+    padding: 2em 1em;
+    
+    .section {
+        &__h2 {
+            font-size: 2rem;
+            font-style: italic;
+            letter-spacing: 3px;
+            margin-bottom: .5em;
+            color: $clr-support;
+            border-bottom: 2px solid $clr-brand;
+
+            &::first-letter {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+.address {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+
+    &__button {
+        background-color: $clr-secondary;
+        color: $clr-txt-light;
+        padding: .5em 1.5em;
+        width: 370px;
+        border-radius: 5px;
+        text-align: center;
+        transition: $transition-fast;
+
+        &:hover {
+            background-color: $clr-support;
+        }
+    }
+}
