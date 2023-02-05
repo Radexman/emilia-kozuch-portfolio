@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navlinks = document.querySelector('.navlinks');
 const navlink = document.querySelectorAll('.navlinks__navlink');
-const accordion = document.getElementsByClassName('contentBx');
+const accordion = document.getElementsByClassName('accordion__box');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger--active');

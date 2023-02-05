@@ -1,10 +1,9 @@
 // ===== Section with responsive accordion pannels ===== //
 
 .article-accordion {
-    min-height: 120vh;
-    padding: 2em 2em;
-    text-align: center;
-
+    min-height: 100vh;
+    padding: 2em 1em;
+    text-align: justify;
 
     .section {
         &__h2 {
@@ -13,6 +12,9 @@
             letter-spacing: 3px;
             margin-bottom: .5em;
             color: $clr-support;
+            text-align: center;
+            border-bottom: 2px solid $clr-brand;
+
 
             &::first-letter {
                 font-size: 3rem;
@@ -21,15 +23,17 @@
     }
 
     .accordion {
+        margin-top: 1.5rem;
         display: grid;
         gap: .2em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         text-align: center;
+        position: relative;
 
-        .contentBx {
+        .accordion__box {
             position: relative;
 
-            .label {
+            .box__label {
                 position: relative;
                 padding: 10px;
                 background-color: $clr-secondary;
@@ -41,12 +45,12 @@
                     position: absolute;
                     top: 50%;
                     right: 20px;
-                    transform: translateY(-50%);
+                    transform: translateY(-55%);
                     font-size: 1.5rem;
                 }
             }
 
-            .content {
+            .box__content {
                 position: relative;
                 height: 0;
                 overflow: hidden;
@@ -59,12 +63,16 @@
         }
     }
 
-    .accordion .contentBx.active .content {
+    .accordion .accordion__box.active .box__content {
         height: 180px;
         padding: 10px;
     }
 
-    .accordion .contentBx.active .label::before {
+    .accordion .accordion__box.active .box__label::before {
         content: '-';
+    }
+
+    .accordion::after {
+        @include horizontal-line-left;
     }
 }
