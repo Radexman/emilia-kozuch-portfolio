@@ -26,21 +26,22 @@ $transition-slow: 500ms ease-in-out;
 $bottom-shadow: 1px 2px 7px #000;
 
 // Mixins
-@mixin vertical-line {
+
+@mixin vertical-line-right {
     content: '';
     width: 6px;
-    left: clamp(-13px, -4vw, -80px);
+    right: clamp(-13px, -4vw, -80px);
     height: 200px;
     background-color: $clr-transparent;
     position: absolute;
     z-index: -1;
 }
 
-@mixin horizontal-line {
+@mixin horizontal-line-right {
     content: '';
     height: 4px;
-    bottom: -130px;
-    left: 0;
+    bottom: -110px;
+    right: 0;
     width: 50px;
     background-color: $clr-txt-dark;
     position: absolute;

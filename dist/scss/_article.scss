@@ -26,13 +26,13 @@
             position: relative;
 
                 &::before {
-                    @include vertical-line;
+                    @include vertical-line-right;
                 }
 
                 &::after {
-                    @include horizontal-line;
+                    @include horizontal-line-right;
                 }
-    }
+        }
 }
 
 .article__image {

@@ -9,17 +9,17 @@
             grid-row: 1;
             width: 200px;
             height: 200px;
-            border-radius: 100px;
-            box-shadow: none;
+            border-radius: 50%;
+            box-shadow: clamp(40px, 2vw, 60px) clamp(-40px, -5vw, 60px) 0 $clr-transparent;
         }
-    }
 
-    .article__image:nth-child(1) {
-        box-shadow: none;
-        margin-top: 8em;
-    }
-
-    .section__h2 {
-        text-align: center;
+        .article__image:nth-child(1){
+            margin-top: 3em;
+            box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 5vw, 60px) 0 $clr-transparent;
+        }
+    
+        .section__h2 {
+            text-align: center;
+        }
     }
 }
