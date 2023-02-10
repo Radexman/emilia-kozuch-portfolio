@@ -46,7 +46,7 @@
   transition: 150ms ease-in;
 }
 .nav .navlinks__navlink:hover {
-  color: #60725d;
+  color: #5d7266;
   font-weight: 700;
 }
 .nav .hamburger {
@@ -273,7 +273,7 @@
 .article-accordion .accordion .accordion__box .box__label {
   position: relative;
   padding: 10px;
-  background-color: #60725d;
+  background-color: #5d7266;
   cursor: pointer;
   color: #f2f2f2;
   border-radius: 5px;
@@ -382,7 +382,7 @@
   margin-top: 1.5rem;
 }
 .address__button {
-  background-color: #60725d;
+  background-color: #5d7266;
   color: #f2f2f2;
   padding: 0.5em 1.5em;
   border-radius: 5px;
@@ -393,6 +393,9 @@
 }
 .address__button:hover {
   background-color: #262626;
+}
+.address__button:active {
+  background-color: #5d7266;
 }
 
 .address__section {
@@ -443,10 +446,23 @@
   transition: 150ms ease-in;
 }
 .footer .fa-brands:hover {
-  color: #60725d;
+  color: #5d7266;
 }
+.footer .fa-brands:active {
+  color: #f2f2f2;
+}
+.footer .footer__date,
 .footer .footer__acreditation {
   font-size: 0.5rem;
+}
+.footer .author {
+  color: #5d7266;
+}
+.footer .author:hover {
+  color: #f0ffec;
+}
+.footer .author:active {
+  color: #60725d;
 }
 
 *,

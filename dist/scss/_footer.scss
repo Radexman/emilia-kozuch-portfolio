@@ -21,9 +21,25 @@
 		&:hover {
 			color: $clr-secondary;
 		}
+		&:active {
+			color: $clr-txt-light;
+		}
 	}
 
+	.footer__date,
 	.footer__acreditation {
 		font-size: 0.5rem;
+	}
+
+	.author {
+		color: $clr-secondary;
+
+		&:hover {
+			color: $clr-primary;
+		}
+
+		&:active {
+			color: $clr-brand;
+		}
 	}
 }
