@@ -33,6 +33,7 @@
 				cursor: pointer;
 				color: $clr-txt-light;
 				border-radius: 5px;
+				transition: $transition-fast;
 
 				&::before {
 					content: '+';
@@ -41,6 +42,10 @@
 					right: 20px;
 					transform: translateY(-55%);
 					font-size: 1.5rem;
+				}
+
+				&:hover {
+					background-color: $clr-support;
 				}
 			}
 
@@ -53,13 +58,14 @@
 				text-align: justify;
 				background-color: $clr-transparent;
 				margin-top: 5px;
+				padding: 0 5%;
 			}
 		}
 	}
 
 	.accordion .accordion__box.active .box__content {
 		height: 300px;
-		padding: 10px;
+		padding-top: 10px;
 	}
 
 	.accordion .accordion__box.active .box__label::before {

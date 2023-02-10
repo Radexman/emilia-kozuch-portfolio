@@ -29,4 +29,10 @@
 	.address__button {
 		width: 80vw;
 	}
+
+	.article-accordion {
+		.accordion .accordion__box.active .box__content {
+			height: 200px;
+		}
+	}
 }
