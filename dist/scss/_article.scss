@@ -1,53 +1,48 @@
 // ===== Template for main sections ===== //
 
 .article {
-    min-height: 100vh;
-    padding: 2em 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: .5rem;
-    text-align: justify;
+	min-height: 100vh;
+	padding: 2em 1em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
+	text-align: justify;
 
-    .section {
-        &__h2 {
-            font-size: 2rem;
-            font-style: italic;
-            letter-spacing: 3px;
-            margin-bottom: .5em;
-            color: $clr-support;
-            border-bottom: 2px solid $clr-brand;
+	.section {
+		&__h2 {
+			@include subheading;
 
-            &::first-letter {
-                font-size: 3rem;
-            }
-        }
+			&::first-letter {
+				font-size: 3rem;
+			}
+		}
 
-        .section__text {
-            display: block;
-            position: relative;
+		.section__text {
+			display: block;
+			position: relative;
 
-                &::before {
-                    @include vertical-line-right;
-                }
+			&::before {
+				@include vertical-line-right;
+			}
 
-                &::after {
-                    @include horizontal-line-left;
-                }
-        }
-}
+			&::after {
+				@include horizontal-line-left;
+			}
+		}
+	}
 
-.article__image {
-    margin-inline: auto;
-    margin-top: .5em;
-    width: 400px;
-    height: 651px;
-    display: inline-block;
-    box-shadow: clamp(40px, 15vw, 60px) clamp(-40px, -15vw, 60px) 0 $clr-transparent;
-}
+	.article__image {
+		margin-inline: auto;
+		margin-top: 0.5em;
+		width: 400px;
+		height: 651px;
+		display: inline-block;
+		box-shadow: clamp(40px, 15vw, 60px) clamp(-40px, -15vw, 60px) 0 $clr-transparent;
+	}
 
-.article {
-    &__image:nth-child(1) {
-        box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 15vw, 60px) 0 $clr-transparent;
-    }
-}
+	.article {
+		&__image:nth-child(1) {
+			box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 15vw, 60px) 0 $clr-transparent;
+		}
+	}
 }

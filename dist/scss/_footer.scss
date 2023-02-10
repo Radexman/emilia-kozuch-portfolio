@@ -1,0 +1,29 @@
+.footer {
+	min-height: 25vh;
+	background-color: $clr-support;
+	color: $clr-txt-light;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 0.5rem;
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.3rem;
+	}
+
+	.fa-brands {
+		transition: $transition-fast;
+
+		&:hover {
+			color: $clr-secondary;
+		}
+	}
+
+	.footer__acreditation {
+		font-size: 0.5rem;
+	}
+}
