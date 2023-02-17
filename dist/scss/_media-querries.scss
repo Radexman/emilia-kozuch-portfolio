@@ -13,6 +13,10 @@
 			box-shadow: clamp(40px, 2vw, 60px) clamp(-40px, -5vw, 60px) 0 $clr-transparent;
 		}
 
+		.article__image:nth-child(0) {
+			content: url(/dist/assets/images/profile-picture-mini.jpg);
+		}
+
 		.article__image:nth-child(1) {
 			margin-top: 3em;
 			box-shadow: clamp(-40px, -15vw, -60px) clamp(40px, 5vw, 60px) 0 $clr-transparent;

@@ -5,7 +5,6 @@ const accordion = document.getElementsByClassName('accordion__box');
 const acreditation = document.querySelector('.footer__date');
 const year = new Date().getFullYear();
 const finalYear = ` ${year}`;
-acreditation.textContent += finalYear;
 
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('hamburger--active');
@@ -24,3 +23,5 @@ for (let i = 0; i < accordion.length; i++) {
 		this.classList.toggle('active');
 	});
 }
+
+acreditation.textContent += finalYear;

@@ -1,28 +1,13 @@
-# emilia-kozuch-portfolio
- A portfolio website for Emilia Kożuch. Professional english language lessons.
+# **Emilia Kożuch Portfolio**
 
-# Website sections
-Header 
- - Brand name
- - Navigation
- - Banner
- - Round profile picture
-Main
- - About section
- - Education section
- - Expierience section
- - Avialable hours 
- - Form of classes
+It is a commercial project for Emilia Kożuch, an English teacher and student. The website contains information about Ms. Kożuch, her education, education, and the language services she offers. Here you can find out about the method of conducting language classes and how to contact Ms. Kożuch.
 
-Address
- - Email
- - Telephone number
+## **Project**
 
-Footer
- - Legal notice
- - Date
- - Link to my portfolio
+This project was built using:
 
-# Style guide
- - Font Handwritten - Pacifico
- - Font Sans-serif - Lato / Helvetica / Roboto
+- BEM Methodlogy
+- SASS Variables
+- SASS Partials
+- Mobile First Design
+- RWD
