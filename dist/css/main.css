@@ -513,6 +513,10 @@ a {
   color: inherit;
 }
 
+strong {
+  font-weight: bolder;
+}
+
 body {
   min-height: 100vh;
   background-color: #f2f2f2;
