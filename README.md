@@ -1,6 +1,6 @@
 # **Emilia Kożuch Portfolio**
 
-It is a commercial project for Emilia Kożuch, an English teacher and student. The website contains information about Ms. Kożuch, her education, education, and the language services she offers. Here you can find out about the method of conducting language classes and how to contact Ms. Kożuch.
+This website serves as a dynamic platform tailored specifically for Emilia Kożuch, a dedicated English teacher and avid student. Catering to both her educational pursuits and her role as an English tutor, the site provides comprehensive insights into Ms. Kożuch's background, qualifications, and the range of language services she offers. Visitors can delve into detailed information about her educational journey, teaching methodology, and the array of language classes she conducts. Additionally, the website offers seamless communication channels, guiding visitors on how to easily connect with Ms. Kożuch to explore opportunities for language learning and collaboration.
 
 Link to website:
 [http://emiliakozuch.pl/](https://emilia-kozuch-portfolio.netlify.app/)
